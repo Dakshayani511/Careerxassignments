@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>clock designe</title>
+</head>
+<style>
+    .clock-container{  
+            width:350px;  
+            height: 350px;  
+            border: 6px solid black;  
+            border-radius: 50%;  
+            position: relative;  
+            background: skyblue;  
+
+        }  
+        .clock-container::after{  
+            content: "";  
+            position: absolute;  
+            width: 15px;  
+            height: 15px;  
+            background: black;  
+            left: 50%;  
+            top: 50%;  
+            transform: translate(-50%,-50%)  ;border-radius: 50%;  
+        }  
+        .clock-number{  
+            position: absolute;  
+            width: 100%;  
+            height: 100%;  
+            text-align: center;  
+        }  
+
+        .clock-number> div{  
+            padding: 12px;  
+        }  
+        .num1{  
+            transform: rotate(30deg);
+        }  
+        .num2{  
+            transform: rotate(60deg); 
+        }  
+        .num3{  
+            transform: rotate(90deg); 
+        }  
+        .num4{  
+            transform: rotate(120deg);  
+        }  
+        .num5{  
+            transform: rotate(150deg);
+        }   
+        .num6{  
+            transform: rotate(180deg);  
+        }  
+        .num7{  
+            transform: rotate(210deg);  
+        }  
+        .num8{  
+            transform: rotate(240deg);  
+        }  
+        .num9{  
+            transform: rotate(270deg); 
+        }    
+        .num10{  
+            transform: rotate(300deg)  
+        }    
+        .num11{  
+            transform: rotate(330deg)  
+        }  
+
+        .num12{  
+            transform: rotate(360deg)  
+        }  
+
+        
+        
+
+</style>
+
+<body>
+    <div class="clock-container">  
+        <div class="clock-number num1"><div class="">1</div></div>  
+        <div class="clock-number num2"><div class="">2</div></div>  
+        <div class="clock-number num3"><div class="">3</div></div>  
+        <div class="clock-number num4"><div class="">4</div></div>  
+        <div class="clock-number num5"><div class="">5</div></div>  
+        <div class="clock-number num6"><div class="">6</div></div>  
+        <div class="clock-number num7"><div class="">7</div></div>  
+        <div class="clock-number num8"><div class="">8</div></div>  
+        <div class="clock-number num9"><div class="">9</div></div>  
+        <div class="clock-number num10"><div class="">10</div></div>  
+        <div class="clock-number num11"><div class="">11</div></div>  
+        <div class="clock-number num12"><div class="">12</div></div>  
+      </div>  
+</body>
+
+</html>
